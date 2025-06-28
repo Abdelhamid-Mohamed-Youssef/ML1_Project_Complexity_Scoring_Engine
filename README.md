@@ -1,6 +1,9 @@
+
 # 🧠 ML1: Project Complexity Scoring Engine
 
 This AI-powered engine was developed as an internal initiative at **DAMAC** to help management assess and prioritize projects based on multiple complexity factors. It is currently in the **UAT (User Acceptance Testing)** phase and runs in parallel with our manual scoring model. The tool enables automatic scoring, classification, and visualization of project complexity levels — with a production-ready Streamlit interface.
+
+![Dashboard Preview](assets/dashboard_preview.png)
 
 ---
 
@@ -30,10 +33,14 @@ This AI-powered engine was developed as an internal initiative at **DAMAC** to h
 ML1_Project_Complexity_Scoring_Engine/
 │
 ├── app/                    ← Streamlit app logic
-│   └── streamlit_app.py    ← Full A/B test and scoring interface
+│   ├── streamlit_app.py    ← Full A/B test and scoring interface
+│   └── ml1_dashboard.py    ← Dashboard logic
 │
 ├── notebooks/              ← Development & experimentation
 │   └── ML1_Scoring_Engine.ipynb
+│
+├── data/                   ← Processed input data
+│   └── ML1_Project_Complexity_FULL_EXTENDED.xlsx
 │
 ├── requirements.txt        ← Python dependencies
 ├── README.md               ← This file
@@ -44,7 +51,7 @@ ML1_Project_Complexity_Scoring_Engine/
 
 ## 🧪 Status: UAT in Progress
 
-This project is currently being tested internally by DAMAC's Planning & BI teams.  
+This project is currently being tested internally by DAMAC's Planning & Data Science teams.  
 ✅ Models have been trained and validated  
 ✅ All business logic has been reviewed  
 ✅ Outputs were reviewed by Central Planning (✅ from Ali)
@@ -86,6 +93,17 @@ Each project is scored and labeled based on:
 
 ---
 
+## 🔍 Dashboard Preview
+
+Make sure the following screenshot exists locally at `assets/dashboard_preview.png`  
+If not, create the folder and place your latest exported screenshot with that name:
+```
+assets/
+└── dashboard_preview.png
+```
+
+---
+
 ## 🧩 What’s Next?
 
 We are integrating this into:
@@ -94,8 +112,5 @@ We are integrating this into:
 
 ---
 
-📬 For internal use only. For questions or improvements, contact:
-**Abdelhamid Mohamed – BI Planning Team, DAMAC**
-
-
-
+📬 For internal use only. For questions or improvements, contact:  
+**Abdelhamid Mohamed – Data Scientist, DAMAC**
